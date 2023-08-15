@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sudoku</title>
+</head>
+<body>
+    <div class="container" style="display: flex; flex-direction: column; gap: 10px; align-items: center; justify-content: center;">
+        <h1>HD SUDOKU</h1>
+        <table>
+            <tr>
+                <td>
+                    <input min="1" max="9"type="text" id="00" class="left top">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="01" class="top">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="02" class="top right">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="03" class="top">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="04" class="top">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="05" class="top">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="06" class="left top">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="07" class="top">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="08" class="right top">
+                </td>
+               </tr>
+               <tr>
+                <td>
+                    <input min="1" max="9"type="text" id="10" class="left">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="11" >
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="12" class="right">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="13">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="14">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="15" >
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="16" class="left">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="17">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="18" class="right">
+                </td>
+               </tr>
+               <tr>
+                <td>
+                    <input min="1" max="9"type="text" id="20" class="left bottom">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="21" class="bottom">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="22" class="right bottom">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="23" class="bottom">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="24" class="bottom">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="25" class="bottom">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="26" class="left bottom">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="27" class="bottom">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="28" class="right bottom">
+                </td>
+               </tr>
+               <tr>
+                <td>
+                    <input min="1" max="9"type="text" id="30" class="left">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="31">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="32" class="right">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="33">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="34">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="35">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="36" class="left">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="37">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="38" class="right">
+                </td>
+               </tr>
+               <tr>
+                <td>
+                    <input min="1" max="9"type="text" id="40" class="left">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="41">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="42" class="right">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="43">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="44">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="45">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="46" class="left">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="47">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="48" class="right">
+                </td>
+               </tr>
+               <tr>
+                <td>
+                    <input min="1" max="9"type="text" id="50" class="left bottom">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="51" class="bottom">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="52" class="right bottom">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="53" class="bottom">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="54" class="bottom">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="55" class="bottom">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="56" class="bottom left">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="57" class="bottom">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="58" class="bottom right">
+                </td>
+               </tr>
+               <tr>
+                <td>
+                    <input min="1" max="9"type="text" id="60" class="left">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="61">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="62" class="right">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="63">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="64">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="65">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="66" class="left">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="67">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="68" class="right">
+                </td>
+               </tr>
+               <tr>
+                <td>
+                    <input min="1" max="9"type="text" id="70" class="left">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="71">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="72" class="right">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="73">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="74">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="75">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="76" class="left">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="77">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="78" class="right">
+                </td>
+               </tr>
+               <tr>
+                <td>
+                    <input min="1" max="9"type="text" id="80" class="bottom left">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="81" class="bottom">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="82" class="bottom right">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="83" class="bottom">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="84" class="bottom">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="85" class="bottom">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="86" class="bottom left">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="87" class="bottom">
+                </td>
+                <td>
+                    <input min="1" max="9"type="text" id="88" class="bottom right">
+                </td>
+               </tr>
+            
+        </table>
+        <div style="display: flex; gap:10px">
+        <button onclick="gen()">Generate</button>
+        <button onclick="fill()">solve</button>
+        <button onclick="clrr()">clear</button>
+        </div>
+
+    </div>
+    <script  src="script.js"></script>
+</body>
+</html>
